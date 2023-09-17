@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendAcceptCancelCardViewId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/friendAcceptCancelFirstLinearLayoutId"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/friendAcceptCancelProfileImageViewId"
+                android:src="@drawable/default_profile_picture"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#F44336"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/friendAcceptCancelSecondLinearLayoutId"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/friendAcceptCancelNameTextViewId"
+                    android:text="@string/friends_row_name_text_view"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friendAcceptCancelThirdLinearLayoutId"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/friendAcceptCancelCButtonId"
+                        android:background="@drawable/buttons"
+                        android:text="@string/friend_accept_cancel_row_cancel_request_button"/>
+
+
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/friendAcceptCancelCheckButtonId"
+                        android:background="@drawable/ic_baseline_check_circle_24"/>
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/friendAcceptCancelRejectButtonId"
+                        android:background="@drawable/ic_baseline_cancel_24"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signUpActivityScrollViewId"
+    tools:context=".activities.SignupActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpActivitySignUpTextViewId"
+            android:text="@string/sign_up_activity_sign_up_text_view"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:background="#F44336"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="100dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpActivityFirstLinearLayoutId"
+            android:layout_below="@id/signUpActivitySignUpTextViewId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpActivityAlreadyAMemberTextViewId"
+                android:text="@string/sign_up_activity_already_member_text_view"
+                android:textSize="20sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpActivityGoToLoginActivityButtonId"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:text="@string/sign_up_activity_go_to_login_activity_button"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpActivitySecondLinearLayoutId"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/signUpActivityFirstLinearLayoutId">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:id="@+id/signUpActivityEnterNameEditTextId"
+                android:hint="@string/sign_up_activity_name_edit_text"
+                android:textSize="25sp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/inputs"
+                android:inputType="text"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/signUpActivityEnterSureNameEditTextId"
+                android:hint="@string/sign_up_activity_sure_name_edit_text"
+                android:textSize="25sp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/inputs"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signUpActivityEnterEmailEditTextId"
+            android:layout_below="@id/signUpActivitySecondLinearLayoutId"
+            android:layout_marginTop="20dp"
+            android:hint="@string/sign_up_activity_enter_email_edit_text"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/inputs"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="5dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signUpActivityEnterPasswordEditTextId"
+            android:layout_below="@id/signUpActivityEnterEmailEditTextId"
+            android:layout_marginTop="20dp"
+            android:hint="@string/sign_up_activity_enter_password_edit_text"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/inputs"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/signUpActivityEnterPasswordAgainEditTextId"
+            android:layout_below="@id/signUpActivityEnterPasswordEditTextId"
+            android:layout_marginTop="20dp"
+            android:hint="@string/sign_up_activity_enter_password_again_edit_text"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/inputs"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/signUpActivityRegisterAccountButtonId"
+            android:text="@string/sign_up_activity_sign_up_button"
+            android:layout_below="@id/signUpActivityEnterPasswordAgainEditTextId"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons"/>
+
+    </RelativeLayout>
+</ScrollView>

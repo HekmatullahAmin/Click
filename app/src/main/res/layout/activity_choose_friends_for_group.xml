@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ChooseFriendsForGroupActivity">
+
+    <include android:id="@+id/chooseFriendsForGroupActivityActionBarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/group_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseFriendsForGroupActivityRecyclerViewId"
+        android:layout_below="@id/chooseFriendsForGroupActivityActionBarId"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseFriendsFOrGroupFloatingActionButtonId"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        android:backgroundTint="@color/colorPrimary"
+        android:tint="@color/colorAccent"
+        android:layout_margin="20dp"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="50dp"/>
+</RelativeLayout>

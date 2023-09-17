@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FriendRequestProfile">
+
+    <include android:id="@+id/friendRequestActivityProfileActionBarId"
+        layout="@layout/custom_toolbar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/friendRequestActivitySecondRelativeLayoutId"
+        android:layout_below="@id/friendRequestActivityProfileActionBarId">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/friendRequestActivityProfilePictureCircleImageViewId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/default_profile_picture"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#F44336"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/friendRequestActivityNameTextViewId"
+            android:text="@string/friend_request_activity_name_text_view"
+            android:layout_below="@id/friendRequestActivityProfilePictureCircleImageViewId"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/friendRequestActivityFirstLineImageViewId"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/friendRequestActivityNameTextViewId"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/friendRequestActivityAboutTextViewId"
+            android:text="@string/friend_request_activity_about_text_view"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/friendRequestActivityFirstLineImageViewId"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/friendRequestActivitySecondLineImageViewId"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/friendRequestActivityAboutTextViewId"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/friendRequestActivityUpdateProfileButtonId"
+            android:text="@string/friend_request_activity_send_or_cancel_request_button"
+            android:layout_below="@id/friendRequestActivitySecondLineImageViewId"
+            android:layout_marginTop="80dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons"/>
+    </RelativeLayout>
+</RelativeLayout>

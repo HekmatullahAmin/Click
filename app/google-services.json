@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976523521161",
+    "project_id": "click-c318a",
+    "storage_bucket": "click-c318a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976523521161:android:610380a15ff63513ca2a58",
+        "android_client_info": {
+          "package_name": "com.hekmatullahamin.click"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976523521161-bkntts2m21k83f2veo77b3qdtslqnnq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtHRCs5DC31dh6xBGVbe7o-1UZVK_KikY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976523521161-bkntts2m21k83f2veo77b3qdtslqnnq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

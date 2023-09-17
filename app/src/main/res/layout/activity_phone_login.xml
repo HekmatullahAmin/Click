@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activities.PhoneLoginActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/phoneLoginActivityMobileNumberEditTextId"
+        android:hint="@string/phone_login_activity_enter_mobile_number_edit_text"
+        android:layout_marginTop="200dp"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/inputs"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/phoneLoginActivitySentCodeEditTextId"
+        android:hint="@string/phone_login_activity_enter_sent_code_edit_text"
+        android:layout_below="@id/phoneLoginActivityMobileNumberEditTextId"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/inputs"
+        android:visibility="invisible"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneLoginActivitySendVerificationCodeButtonId"
+        android:text="@string/phone_login_activity_send_verification_code_button"
+        android:layout_below="@id/phoneLoginActivitySentCodeEditTextId"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttons"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneLoginActivityVerifyButtonId"
+        android:text="@string/phone_login_activity_verify_button"
+        android:layout_below="@id/phoneLoginActivitySendVerificationCodeButtonId"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        android:background="@drawable/buttons"/>
+
+</RelativeLayout>

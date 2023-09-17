@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/messageRowReceiverRelativeLayoutId">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/messageRowReceiverProfilePictureCircleImageViewId"
+            android:src="@drawable/default_profile_picture"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/messageRowReceiverProfilePictureCircleImageViewId"
+            android:id="@+id/messageRowFirstLinearLayoutId"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:id="@+id/messageRowReceiverNameTextViewId"
+                android:text="@string/message_row_receiver_name_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/messageRowReceiverMessageTextViewId"
+                android:background="@drawable/message_shape_receiver"
+                android:hint="@string/message_row_receiver_message_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/messageRowReceiverTimeAndDateTextViewId"
+                android:text="@string/message_row_receiver_time_and_date_text_view"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/messageRowSenderRelativeLayoutId">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/messageRowSenderProfilePictureCircleImageViewId"
+            android:src="@drawable/default_profile_picture"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/messageRowSenderProfilePictureCircleImageViewId"
+            android:id="@+id/messageRowSecondLinearLayoutId"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:id="@+id/messageRowSenderNameTextViewId"
+                android:text="@string/message_row_receiver_name_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/messageRowSenderMessageTextViewId"
+                android:background="@drawable/messages_shape"
+                android:text="@string/message_row_sender_message_text_view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:id="@+id/messageRowSenderTimeAndDateTextViewId"
+                android:text="@string/message_row_receiver_time_and_date_text_view"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

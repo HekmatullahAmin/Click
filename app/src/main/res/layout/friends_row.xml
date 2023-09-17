@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendsRowCardViewId">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/friendsRowFirstLinearLayoutId"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/friendsRowProfileImageViewId"
+                android:src="@drawable/default_profile_picture"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#F44336"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/friendsRowSecondLinearLayoutId"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friendsRowNameTextViewId"
+                    android:text="@string/friends_row_name_text_view"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/friendsRowAboutTextViewId"
+                    android:text="@string/friends_row_about_text_view"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/friendsRowThirdLinearLayoutId"
+                     android:layout_marginTop="5dp"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/friendsRowOnlineStatusImageViewId"
+                         android:src="@drawable/online_circle"
+                         android:visibility="invisible"/>
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:id="@+id/friendsRowLastSeenTextViewId"
+                         android:text="@string/friends_row_last_seen_text_view"
+                         android:layout_gravity="bottom"
+                         android:gravity="bottom"
+                         android:visibility="invisible"/>
+                 </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

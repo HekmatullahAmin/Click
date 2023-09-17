@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsActivity">
+
+    <include android:id="@+id/settingsActivityActionBarId"
+        layout="@layout/custom_toolbar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/settingsActivitySecondRelativeLayoutId"
+        android:layout_below="@id/settingsActivityActionBarId">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/settingsActivityProfilePictureImageViewId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/default_profile_picture"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#F44336"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityFrameLayoutId"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/settingsActivityProfilePictureImageViewId">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/settingsActivityChangeProfilePictureImageButton"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/ic_baseline_camera_alt_24"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityNameTextViewId"
+            android:text="@string/settings_activity_name_text_view"
+            android:layout_below="@id/settingsActivityFrameLayoutId"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityNameEditTextId"
+            android:hint="@string/settings_activity_name_edit_text"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/settingsActivityNameTextViewId"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityFirstLineImageViewId"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/settingsActivityNameEditTextId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityAboutTextViewId"
+            android:text="@string/settings_activity_about_text_view"
+            android:layout_below="@id/settingsActivityFirstLineImageViewId"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityAboutEditTextId"
+            android:hint="@string/settings_activity_about_edit_text"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/settingsActivityAboutTextViewId"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivitySecondLineImageViewId"
+            android:src="@drawable/line"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/settingsActivityAboutEditTextId"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityPhoneTextViewId"
+            android:text="@string/settings_activity_phone_text_view"
+            android:layout_below="@id/settingsActivitySecondLineImageViewId"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityMobileNumberTextViewId"
+            android:hint="@string/settings_activity_mobile_number_text_view"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/settingsActivityPhoneTextViewId"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsActivityUpdateProfileButtonId"
+            android:text="@string/settings_activity_update_profile_button"
+            android:layout_below="@id/settingsActivityMobileNumberTextViewId"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signUpActivityScrollViewId"
+    tools:context=".activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/loginActivityClickImageViewId"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/click_image"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginActivityEmailAddressTextViewId"
+            android:layout_below="@id/loginActivityClickImageViewId"
+            android:text="@string/login_activity_email_address_text_view"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/loginActivityEnterEmailEditTextId"
+            android:hint="@string/login_activity_enter_email_edit_text"
+            android:layout_below="@id/loginActivityEmailAddressTextViewId"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/inputs"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginActivityPasswordTextViewId"
+            android:layout_below="@id/loginActivityEnterEmailEditTextId"
+            android:text="@string/login_activity_password_text_view"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/loginActivityEnterPasswordEditTextId"
+            android:hint="@string/login_activity_enter_password_edit_text"
+            android:layout_below="@id/loginActivityPasswordTextViewId"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/inputs"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginActivityLogInButtonId"
+            android:text="@string/login_activity_log_in_button"
+            android:layout_below="@id/loginActivityEnterPasswordEditTextId"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginActivityDoNotHaveAccountTextViewId"
+            android:text="@string/login_activity_do_not_have_account_text_view"
+            android:layout_below="@id/loginActivityLogInButtonId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginActivitySignUpButtonId"
+            android:text="@string/login_activity_sign_up_button"
+            android:layout_below="@id/loginActivityDoNotHaveAccountTextViewId"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons"/>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loginActivityProgressBarId"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/loginActivitySignUpButtonId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#F44336" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginActivityPhoneAuthenticationButtonId"
+            android:text="@string/login_activity_phone_authentication_button"
+            android:layout_below="@id/loginActivityProgressBarId"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/buttons"/>
+
+    </RelativeLayout>
+</ScrollView>
